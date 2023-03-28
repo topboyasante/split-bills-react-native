@@ -1,6 +1,5 @@
 import { Stack } from "expo-router"
 import { SafeAreaView, View,ScrollView, Text } from "react-native"
-import HeaderTitle from "../components/header/HeaderTitle"
 import {colors} from '../constants/Colors'
 import Welcome from "../pages/Welcome"
 const Home = () =>{
@@ -12,7 +11,7 @@ const Home = () =>{
                         backgroundColor:colors.baseColor,
                         headerShadowVisible:false,
                     },
-                    headerTitle:()=> <HeaderTitle/>
+                    headerTitle:'',
                 }
             }/>
             <ScrollView showsVerticalScrollIndicator={false} style={{backgroundColor:colors.baseColor}}>
